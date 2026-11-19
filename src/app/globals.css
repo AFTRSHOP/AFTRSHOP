@@ -98,6 +98,45 @@ button:focus-visible, a:focus-visible, summary:focus-visible, select:focus-visib
 .header-shop-link span, .text-link span { font-size: 15px; }
 .mobile-menu { display: none; }
 
+.hero-banner-container {
+  position: relative;
+  width: 100%;
+  background: #090908;
+  border-bottom: 1px solid var(--rule);
+}
+.hero-banner-link {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+.hero-banner-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1024 / 342;
+  min-height: clamp(260px, 45vw, 680px);
+  overflow: hidden;
+  background: #090908;
+}
+.hero-banner-image {
+  object-fit: cover;
+  object-position: center;
+  transition: transform 600ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+.hero-banner-link:hover .hero-banner-image {
+  transform: scale(1.015);
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
 .hero {
   position: relative;
   isolation: isolate;
@@ -388,7 +427,12 @@ button:focus-visible, a:focus-visible, summary:focus-visible, select:focus-visib
   .mobile-menu summary::-webkit-details-marker { display: none; }
   .mobile-menu nav { position: absolute; top: calc(100% + 10px); right: 0; display: flex; min-width: 200px; flex-direction: column; gap: 0; padding: 8px 16px; border: 1px solid var(--rule); background: #11110f; box-shadow: 0 12px 32px rgba(0, 0, 0, 0.34); }
   .mobile-menu nav a { display: flex; min-height: 46px; align-items: center; color: var(--bone); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; }
-  .hero { min-height: 700px; min-height: 78svh; align-items: flex-end; }
+  .hero-banner-frame {
+    aspect-ratio: 16 / 9;
+    min-height: 220px;
+  }
+
+.hero { min-height: 700px; min-height: 78svh; align-items: flex-end; }
   .hero-image { object-position: 62% center; }
   .hero-shade { background: linear-gradient(0deg, rgba(7, 8, 8, 0.92) 0%, rgba(7, 8, 8, 0.66) 38%, rgba(7, 8, 8, 0.06) 100%), linear-gradient(90deg, rgba(7, 8, 8, 0.2), transparent 75%); }
   .hero-content { padding-top: 160px; padding-bottom: 108px; }

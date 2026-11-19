@@ -12,26 +12,21 @@ export default async function HomePage() {
     <>
       <SiteHeader />
       <main>
-        <section className="hero" aria-labelledby="hero-title">
-          <Image
-            src="/assets/after-dark-campaign.png"
-            alt=""
-            fill
-            priority
-            sizes="100vw"
-            className="hero-image"
-          />
-          <div className="hero-shade" aria-hidden="true" />
-          <div className="hero-content page-gutter">
-            <p className="eyebrow hero-eyebrow">An after-dark uniform</p>
-            <h1 id="hero-title">After the sun.<br />On your terms.</h1>
-            <p className="hero-copy">Streetwear for the ones who make their own way.</p>
-            <Link className="button button-light" href="#shop">
-              Discover the collection <span aria-hidden="true">↘</span>
-            </Link>
-          </div>
-          <p className="hero-caption">AFTRSHOP / CITY SERIES</p>
-          <span className="hero-index" aria-hidden="true">01 — 03</span>
+        {/* Hero Campaign Banner */}
+        <section className="hero-banner-container" aria-labelledby="hero-title">
+          <Link href="#shop" className="hero-banner-link" aria-label="Discover the collection">
+            <div className="hero-banner-frame">
+              <Image
+                src="/assets/hero-banner.jpg"
+                alt="AFTR - After the sun. On your terms."
+                fill
+                priority
+                sizes="100vw"
+                className="hero-banner-image"
+              />
+            </div>
+          </Link>
+          <h1 id="hero-title" className="sr-only">After the sun. On your terms.</h1>
         </section>
 
         <section className="collection-section page-gutter" id="shop" aria-labelledby="collection-title">
@@ -66,7 +61,7 @@ export default async function HomePage() {
           <p className="eyebrow">The night is yours</p>
           <h2 id="closing-title">Move different.</h2>
           <Link className="button button-dark" href="/collections/all">
-            Shop AFTRSHOP <span aria-hidden="true">↗</span>
+            Shop AFTR <span aria-hidden="true">↗</span>
           </Link>
         </section>
       </main>
