@@ -135,7 +135,7 @@ export function ProductDetailsInteractive({ product }: ProductDetailsInteractive
             priority
             sizes="(max-width: 760px) 100vw, 58vw"
             className="product-image"
-            style={{ objectFit: "cover" }}
+            style={{ objectFit: "contain" }}
           />
         </div>
       </div>
