@@ -117,13 +117,14 @@ Two layers with different owners:
 
 ## Brand direction
 
-> Once direction is set, this section is protected. Propose changes to the merchant before rewriting it.
-
-No brand conversation has happened yet. Before the first large design task, run the brand conversation (what the shop sells, who buys, what a visitor should feel in the first seconds, inspiration and anti-inspiration), then replace this section with:
-
-- **Brand image:** A single sentence that holds the whole brand.
-- **Direction:** 2–4 sentences on the visual language, what it avoids, and the distinctive choice that defines this shop — written so a future session can derive the token system from it.
-- **Feelings → consequences:** 4–6 core feelings, each with its design result (e.g. “Warmth → earth tones, organic shapes, golden-light photography”).
+- **Brand image:** AFTRSHOP is an after-dark streetwear uniform for people who make their own way.
+- **Direction:** Keep the storefront cinematic, restrained, and product-first: near-black surfaces, warm bone text, and muted brass accents support documentary-style city photography. Use oversized condensed-feeling editorial hierarchy through the existing heading font, sharp edges, deliberate spacing, and direct language. Avoid hype tropes, neon, gradients as decoration, and noisy layouts; the campaign image and real product photography carry the attitude.
+- **Feelings → consequences:**
+  - **Self-assured →** concise copy, confident scale, and no unnecessary badges.
+  - **After-hours →** low-key city imagery with warm practical light against deep shadow.
+  - **Considered →** open product grids, clear garment details, and disciplined spacing.
+  - **Independent →** direct, unpolished voice and no trend-chasing visual effects.
+  - **Premium →** a limited ink, bone, and brass palette with sharp, tactile composition.
 
 ## Styling system
 
