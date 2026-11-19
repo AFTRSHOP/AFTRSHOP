@@ -336,6 +336,20 @@ button:focus-visible, a:focus-visible, summary:focus-visible, select:focus-visib
 .product-card-copy p { flex: 0 0 auto; margin: 0; color: var(--muted); font-size: 10px; }
 .catalog-message { display: grid; min-height: 210px; place-items: center; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); color: var(--muted); font-size: 13px; text-align: center; }
 
+
+/* upcoming coming soon */
+.upcoming-section { padding-block: 100px; border-top: 1px solid var(--rule); }
+.upcoming-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; list-style: none; margin: 48px 0 0; padding: 0; }
+.upcoming-card { display: flex; flex-direction: column; gap: 0; }
+.upcoming-image-frame { position: relative; width: 100%; aspect-ratio: 3 / 2; overflow: hidden; background: #111110; }
+.upcoming-image { object-fit: cover; object-position: center top; transition: transform 700ms cubic-bezier(0.16, 1, 0.3, 1); }
+.upcoming-card:hover .upcoming-image { transform: scale(1.03); }
+.upcoming-badge { position: absolute; top: 18px; right: 18px; z-index: 2; display: inline-flex; align-items: center; padding: 5px 12px; background: rgba(9,9,8,0.72); border: 1px solid var(--brass); border-radius: 2px; color: var(--brass); font-size: 8px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; backdrop-filter: blur(6px); }
+.upcoming-card-copy { display: flex; flex-direction: column; gap: 6px; padding: 18px 2px 0; border-top: 1px solid var(--rule); }
+.upcoming-vol { margin: 0; color: var(--brass); font-size: 9px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; }
+.upcoming-card-copy h3 { margin: 0; font-size: 20px; font-weight: 700; letter-spacing: -0.01em; line-height: 1.1; }
+.upcoming-desc { margin: 0; color: var(--muted); font-size: 12px; line-height: 1.6; }
+.upcoming-notify { display: inline-flex; align-items: center; margin-top: 4px; color: var(--bone); font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.4; cursor: not-allowed; user-select: none; }
 .standard-section {
   position: relative;
   display: grid;
@@ -499,6 +513,9 @@ button:focus-visible, a:focus-visible, summary:focus-visible, select:focus-visib
   .product-description { font-size: 12px; }
   .not-found { min-height: 62vh; }
   .not-found h1 { font-size: clamp(60px, 15vw, 96px); }
+  .upcoming-section { padding-block: 60px; }
+  .upcoming-grid { grid-template-columns: 1fr; gap: 40px; }
+  .upcoming-card-copy h3 { font-size: 16px; }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; }

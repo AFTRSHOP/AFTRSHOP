@@ -43,6 +43,56 @@ export default async function HomePage() {
           <ProductGrid products={products} connected={connected} />
         </section>
 
+        {/* Upcoming Drops */}
+        <section className="upcoming-section page-gutter" id="upcoming" aria-labelledby="upcoming-title">
+          <div className="section-heading">
+            <div>
+              <p className="eyebrow">Dropping soon</p>
+              <h2 id="upcoming-title">The next chapter.</h2>
+            </div>
+          </div>
+          <ul className="upcoming-grid" aria-label="Upcoming products">
+            <li className="upcoming-card">
+              <div className="upcoming-image-frame">
+                <Image
+                  src="/assets/upcoming-womens-oversized-tee.png"
+                  alt="AFTR After Dark — Women's Oversized Tee"
+                  fill
+                  unoptimized
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="upcoming-image"
+                />
+                <span className="upcoming-badge" aria-label="Coming soon">Coming Soon</span>
+              </div>
+              <div className="upcoming-card-copy">
+                <p className="upcoming-vol">Vol. 001 · After Dark</p>
+                <h3>Women's Oversized Tee</h3>
+                <p className="upcoming-desc">The after-hours silhouette — relaxed, raw, and yours.</p>
+                <span className="upcoming-notify">Notify me ↗</span>
+              </div>
+            </li>
+            <li className="upcoming-card">
+              <div className="upcoming-image-frame">
+                <Image
+                  src="/assets/upcoming-womens-crop-top.png"
+                  alt="AFTR After Dark — Women's Crop Top"
+                  fill
+                  unoptimized
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="upcoming-image"
+                />
+                <span className="upcoming-badge" aria-label="Coming soon">Coming Soon</span>
+              </div>
+              <div className="upcoming-card-copy">
+                <p className="upcoming-vol">Vol. 001 · After Dark</p>
+                <h3>Women's Crop Top</h3>
+                <p className="upcoming-desc">Cut for the ones who move on their own terms.</p>
+                <span className="upcoming-notify">Notify me ↗</span>
+              </div>
+            </li>
+          </ul>
+        </section>
+
         <section className="standard-section page-gutter" id="our-standard" aria-labelledby="standard-title">
           <div className="standard-intro">
             <p className="eyebrow">The AFTR standard</p>
