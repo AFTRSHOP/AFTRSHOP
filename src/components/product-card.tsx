@@ -3,7 +3,9 @@ import Link from "next/link";
 import { formatMoney, type ShopifyProduct } from "@/lib/shopify";
 
 export function ProductCard({ product }: { product: ShopifyProduct }) {
-  const image = product.featuredImage;
+  const imageUrl = product.handle === "trilayer-terry-oversized-tee" 
+    ? "/assets/colours.png" 
+    : (product.featuredImage?.url || "/assets/colours.png");
 
   return (
     <article className="product-card">
@@ -13,17 +15,14 @@ export function ProductCard({ product }: { product: ShopifyProduct }) {
         aria-label={`View ${product.title}`}
       >
         <div className="product-image-frame">
-          {image ? (
-            <Image
-              src={image.url}
-              alt={image.altText || product.title}
-              fill
-              sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-              className="product-image"
-            />
-          ) : (
-            <div className="product-image-missing" aria-hidden="true" />
-          )}
+          <Image
+            src={imageUrl}
+            alt={product.featuredImage?.altText || product.title}
+            fill
+            unoptimized
+            sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+            className="product-image"
+          />
           {!product.availableForSale && <span className="product-badge">Sold out</span>}
           <span className="product-view" aria-hidden="true">View piece <span>↗</span></span>
         </div>

@@ -30,19 +30,6 @@ export default async function HomePage() {
           <h1 id="hero-title" className="sr-only">After the sun. On your terms.</h1>
         </section>
 
-        <section className="collection-section page-gutter" id="shop" aria-labelledby="collection-title">
-          <div className="section-heading">
-            <div>
-              <p className="eyebrow">The current rotation</p>
-              <h2 id="collection-title">Keep your own hours.</h2>
-            </div>
-            <Link className="text-link" href="/collections/all">
-              Shop all <span aria-hidden="true">↗</span>
-            </Link>
-          </div>
-          <ProductGrid products={products} connected={connected} />
-        </section>
-
         {/* Upcoming Drops */}
         <section className="upcoming-section page-gutter" id="upcoming" aria-labelledby="upcoming-title">
           <div className="section-heading">
@@ -91,6 +78,20 @@ export default async function HomePage() {
               </div>
             </li>
           </ul>
+        </section>
+
+        {/* Current Collection / Shop All */}
+        <section className="collection-section page-gutter" id="shop" aria-labelledby="collection-title">
+          <div className="section-heading">
+            <div>
+              <p className="eyebrow">The current rotation</p>
+              <h2 id="collection-title">Keep your own hours.</h2>
+            </div>
+            <Link className="text-link" href="/collections/all">
+              Shop all <span aria-hidden="true">↗</span>
+            </Link>
+          </div>
+          <ProductGrid products={products} connected={connected} />
         </section>
 
         <section className="standard-section page-gutter" id="our-standard" aria-labelledby="standard-title">

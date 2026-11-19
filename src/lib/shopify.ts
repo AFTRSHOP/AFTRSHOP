@@ -316,14 +316,14 @@ const DEMO_FALLBACK: ShopifyProduct[] = [
       "Fabric: 90/10 cotton polyester, 260 GSM Terry-knit texture with a premium hand-feel. Fit: Unisex oversized fit with drop shoulders – relaxed, roomy, and right on trend.",
     availableForSale: true,
     featuredImage: {
-      url: "https://cdn.shopify.com/s/files/1/0792/2148/9817/files/aftr-after-dark-lookbook.png?v=1794899130",
+      url: "/assets/colours.png",
       altText: "TriLayer Terry Oversized Tee",
       width: 1199,
       height: 1312,
     },
     images: [
       {
-        url: "https://cdn.shopify.com/s/files/1/0792/2148/9817/files/aftr-after-dark-lookbook.png?v=1794899130",
+        url: "/assets/colours.png",
         altText: "TriLayer Terry Oversized Tee",
         width: 1199,
         height: 1312,

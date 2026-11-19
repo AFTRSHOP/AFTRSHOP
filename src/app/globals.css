@@ -250,6 +250,7 @@ button:focus-visible, a:focus-visible, summary:focus-visible, select:focus-visib
   width: min(100%, 1800px);
   margin: 0 auto;
   padding-block: clamp(76px, 9vw, 136px);
+  border-top: 1px solid var(--rule);
   scroll-margin-top: 78px;
 }
 .section-heading {
