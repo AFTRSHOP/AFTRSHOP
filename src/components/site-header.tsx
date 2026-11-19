@@ -1,4 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
+import { CartTrigger } from "@/components/cart-trigger";
 
 export function SiteHeader() {
   return (
@@ -6,8 +8,15 @@ export function SiteHeader() {
       <div className="announcement-bar">Built for the hours that last</div>
       <header className="site-header">
         <div className="header-inner">
-          <Link className="wordmark" href="/" aria-label="AFTRSHOP home">
-            AFTR<span>SHOP</span>
+          <Link className="site-logo-link" href="/" aria-label="AFTR home">
+            <Image
+              src="/assets/aftr-logo.png"
+              alt="AFTR"
+              width={112}
+              height={36}
+              priority
+              className="site-logo-img"
+            />
           </Link>
 
           <nav className="desktop-nav" aria-label="Main navigation">
@@ -15,17 +24,21 @@ export function SiteHeader() {
             <Link href="/#our-standard">Our standard</Link>
           </nav>
 
-          <Link className="header-shop-link" href="/collections/all">
-            Explore the collection <span aria-hidden="true">↗</span>
-          </Link>
+          <div className="header-actions">
+            <Link className="header-shop-link" href="/collections/all">
+              Explore the collection <span aria-hidden="true">↗</span>
+            </Link>
 
-          <details className="mobile-menu">
-            <summary aria-label="Open menu">Menu</summary>
-            <nav aria-label="Mobile navigation">
-              <Link href="/collections/all">Shop all</Link>
-              <Link href="/#our-standard">Our standard</Link>
-            </nav>
-          </details>
+            <CartTrigger />
+
+            <details className="mobile-menu">
+              <summary aria-label="Open menu">Menu</summary>
+              <nav aria-label="Mobile navigation">
+                <Link href="/collections/all">Shop all</Link>
+                <Link href="/#our-standard">Our standard</Link>
+              </nav>
+            </details>
+          </div>
         </div>
       </header>
     </>

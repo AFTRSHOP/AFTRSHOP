@@ -1,11 +1,18 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export function SiteFooter() {
   return (
     <footer className="site-footer">
       <div className="footer-main">
-        <Link className="wordmark footer-wordmark" href="/" aria-label="AFTRSHOP home">
-          AFTR<span>SHOP</span>
+        <Link className="site-logo-link" href="/" aria-label="AFTR home">
+          <Image
+            src="/assets/aftr-logo.png"
+            alt="AFTR"
+            width={100}
+            height={32}
+            className="site-logo-img"
+          />
         </Link>
         <p>Made for the ones who move their own way.</p>
         <Link className="footer-shop-link" href="/collections/all">
@@ -13,7 +20,7 @@ export function SiteFooter() {
         </Link>
       </div>
       <div className="footer-bottom">
-        <span>© {new Date().getFullYear()} AFTRSHOP</span>
+        <span>© {new Date().getFullYear()} AFTR</span>
         <span>After the hours. On your terms.</span>
       </div>
     </footer>

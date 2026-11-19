@@ -39,31 +39,45 @@ export default async function ProductPage({ params }: ProductPageProps) {
       <SiteHeader />
       <main className="product-page page-gutter">
         <nav className="breadcrumbs" aria-label="Breadcrumb">
-          <Link href="/">Home</Link><span aria-hidden="true">/</span><Link href="/collections/all">Shop all</Link><span aria-hidden="true">/</span><span aria-current="page">{product.title}</span>
+          <Link href="/">Home</Link>
+          <span aria-hidden="true">/</span>
+          <Link href="/collections/all">Shop all</Link>
+          <span aria-hidden="true">/</span>
+          <span aria-current="page">{product.title}</span>
         </nav>
         <div className="product-layout">
           <div className="product-gallery" aria-label={`${product.title} images`}>
-            {gallery.length ? gallery.map((image, index) => (
-              <div className="product-detail-image" key={`${image.url}-${index}`}>
-                <Image
-                  src={image.url}
-                  alt={image.altText || `${product.title} — view ${index + 1}`}
-                  fill
-                  priority={index === 0}
-                  sizes="(max-width: 760px) 100vw, 58vw"
-                  className="product-image"
-                />
-              </div>
-            )) : (
-              <div className="product-detail-image product-image-missing" aria-label={`No image available for ${product.title}`} />
+            {gallery.length ? (
+              gallery.map((image, index) => (
+                <div className="product-detail-image" key={`${image.url}-${index}`}>
+                  <Image
+                    src={image.url}
+                    alt={image.altText || `${product.title} — view ${index + 1}`}
+                    fill
+                    priority={index === 0}
+                    sizes="(max-width: 760px) 100vw, 58vw"
+                    className="product-image"
+                  />
+                </div>
+              ))
+            ) : (
+              <div
+                className="product-detail-image product-image-missing"
+                aria-label={`No image available for ${product.title}`}
+              />
             )}
           </div>
           <section className="product-info" aria-labelledby="product-title">
             <p className="eyebrow">AFTRSHOP / Essential</p>
             <h1 id="product-title">{product.title}</h1>
-            <p className="product-price">{formatMoney(product.priceRange.minVariantPrice.amount, product.priceRange.minVariantPrice.currencyCode)}</p>
+            <p className="product-price">
+              {formatMoney(
+                product.priceRange.minVariantPrice.amount,
+                product.priceRange.minVariantPrice.currencyCode,
+              )}
+            </p>
             {product.description && <p className="product-description">{product.description}</p>}
-            <ProductPurchase variants={product.variants} />
+            <ProductPurchase product={product} variants={product.variants} />
             <div className="product-detail-rule" />
             <p className="product-detail-note">A considered piece for the hours that belong to you.</p>
           </section>
