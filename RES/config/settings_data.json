@@ -1,0 +1,21 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "current": {
+    "color_palette": {
+      "surface": "#090A09",
+      "on_surface": "#F1E9D9",
+      "surface_2": "#151614",
+      "accent": "#C9AD78",
+      "interactive": "#F1E9D9"
+    },
+    "border_radius_buttons": "sharp"
+  }
+}
