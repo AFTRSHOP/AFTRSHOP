@@ -241,8 +241,20 @@
   },
   "home": {
     "hero": {
-      "title": "New arrivals",
-      "subtitle": "Explore the collection"
+      "eyebrow": "AFTRSHOP — EST. AFTER DARK",
+      "title": "After hours. All day.",
+      "subtitle": "Streetwear for the ones who move differently. Built for the hours that make you.",
+      "cta": "Shop the collection"
+    },
+    "featured": {
+      "eyebrow": "The current rotation",
+      "title": "Shop the collection"
+    },
+    "story": {
+      "eyebrow": "Made for what comes next",
+      "title": "Not made for the feed. Made for the feeling.",
+      "body": "AFTRSHOP is a uniform for the in-between — the last train, the long way home, the plans that were never really plans. Considered pieces. No noise. Your night, your rules.",
+      "cta": "Find your next uniform"
     }
   }
 }
