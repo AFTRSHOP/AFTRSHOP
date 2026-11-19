@@ -17,10 +17,11 @@ export default async function HomePage() {
           <Link href="#shop" className="hero-banner-link" aria-label="Discover the collection">
             <div className="hero-banner-frame">
               <Image
-                src="/assets/hero-banner.jpg"
+                src="/assets/hero-banner.png"
                 alt="AFTR - After the sun. On your terms."
                 fill
                 priority
+                unoptimized
                 sizes="100vw"
                 className="hero-banner-image"
               />

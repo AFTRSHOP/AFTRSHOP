@@ -112,8 +112,8 @@ button:focus-visible, a:focus-visible, summary:focus-visible, select:focus-visib
 .hero-banner-frame {
   position: relative;
   width: 100%;
-  aspect-ratio: 1024 / 342;
-  min-height: clamp(260px, 45vw, 680px);
+  aspect-ratio: 1919 / 665;
+  min-height: clamp(280px, 35vw, 680px);
   overflow: hidden;
   background: #090908;
 }
@@ -455,8 +455,8 @@ button:focus-visible, a:focus-visible, summary:focus-visible, select:focus-visib
   .mobile-menu nav { position: absolute; top: calc(100% + 10px); right: 0; display: flex; min-width: 200px; flex-direction: column; gap: 0; padding: 8px 16px; border: 1px solid var(--rule); background: #11110f; box-shadow: 0 12px 32px rgba(0, 0, 0, 0.34); }
   .mobile-menu nav a { display: flex; min-height: 46px; align-items: center; color: var(--bone); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; }
   .hero-banner-frame {
-    aspect-ratio: 16 / 9;
-    min-height: 220px;
+    aspect-ratio: 1919 / 665;
+    min-height: 200px;
   }
 
 .hero { min-height: 700px; min-height: 78svh; align-items: flex-end; }
