@@ -125,6 +125,33 @@ button:focus-visible, a:focus-visible, summary:focus-visible, select:focus-visib
 .hero-banner-link:hover .hero-banner-image {
   transform: scale(1.015);
 }
+.hero-banner-btn-wrap {
+  position: absolute;
+  left: clamp(20px, 9.2vw, 130px);
+  bottom: clamp(16px, 21%, 110px);
+  z-index: 2;
+}
+.hero-banner-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 42px;
+  padding: 0 20px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  transition: all 180ms ease;
+}
+.hero-banner-link:hover .hero-banner-cta {
+  background: #ede6da;
+  border-color: #ede6da;
+  color: #090908;
+}
 .sr-only {
   position: absolute;
   width: 1px;

@@ -24,6 +24,11 @@ export default async function HomePage() {
                 sizes="100vw"
                 className="hero-banner-image"
               />
+              <div className="hero-banner-btn-wrap">
+                <span className="hero-banner-cta">
+                  Explore the collection <span aria-hidden="true">↘</span>
+                </span>
+              </div>
             </div>
           </Link>
           <h1 id="hero-title" className="sr-only">After the sun. On your terms.</h1>
