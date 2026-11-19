@@ -806,3 +806,128 @@ button:focus-visible, a:focus-visible, summary:focus-visible, select:focus-visib
 }
 
 
+
+.checkbox-options-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Exact Screenshot Option Pills & Buttons */
+.pill-option-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.pill-option-label {
+  font-size: 14px;
+  font-weight: 400;
+  color: #f1ede6;
+  text-transform: none;
+}
+.pill-buttons-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+.pill-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 20px;
+  background: #090908;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 140ms ease;
+}
+.pill-btn:hover {
+  border-color: #ffffff;
+  background: #141412;
+}
+.pill-btn-active {
+  background: #ede6da !important;
+  color: #0c0c0b !important;
+  border-color: #ede6da !important;
+  font-weight: 600;
+}
+.pill-btn-size {
+  min-width: 48px;
+  padding: 0 16px;
+}
+
+/* Quantity counter */
+.quantity-counter {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  background: transparent;
+}
+.quantity-counter-btn {
+  background: none;
+  border: none;
+  color: var(--bone);
+  font-size: 16px;
+  padding: 6px 14px;
+  cursor: pointer;
+  transition: opacity 160ms;
+}
+.quantity-counter-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+.quantity-counter-val {
+  font-size: 14px;
+  font-weight: 600;
+  min-width: 20px;
+  text-align: center;
+}
+
+/* Primary and secondary purchase buttons */
+.add-to-bag-btn {
+  width: 100%;
+  min-height: 48px;
+  background: #ede6da;
+  color: #111111;
+  border: none;
+  border-radius: 0;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: none;
+  cursor: pointer;
+  transition: opacity 160ms ease;
+  margin-top: 10px;
+}
+.add-to-bag-btn:hover:not(:disabled) {
+  opacity: 0.9;
+  background: #ede6da;
+  color: #111111;
+}
+.buy-now-btn {
+  width: 100%;
+  min-height: 48px;
+  background: #1990c6;
+  color: #ffffff;
+  border: none;
+  border-radius: 0;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: none;
+  cursor: pointer;
+  transition: opacity 160ms ease;
+  margin-top: 8px;
+}
+.buy-now-btn:hover:not(:disabled) {
+  opacity: 0.9;
+  background: #1990c6;
+  border-color: #1990c6;
+  color: #ffffff;
+}
